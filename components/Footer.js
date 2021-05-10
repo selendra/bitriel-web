@@ -139,6 +139,7 @@ const FooterContainer = styled(Row)`
 const SubTitle = styled.h2`
   font-size: 24px;
   color: #f5f5f5;
+  cursor: pointer;
   @media (max-width: 500px) {
     font-size: 16px;
   }
@@ -161,4 +162,5 @@ const ListItem = styled.li`
   padding: 10px 0;
   display: flex;
   align-items: center;
+  cursor: pointer;
 `

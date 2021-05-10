@@ -23,6 +23,7 @@ export default function Header() {
                 alt="bitriel"
                 width={160}
                 height={60}
+                style={{cursor: 'pointer'}}
               />
             </Link>
           </Col>

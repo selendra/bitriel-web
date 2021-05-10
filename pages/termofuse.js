@@ -9,6 +9,9 @@ import Link from 'next/link'
 export default function TermOfUse() {
   return (
     <Container>
+      <Head>
+        <title>Term of use</title>
+      </Head>
       <Header/>
       <PageContainer>
         <Row>

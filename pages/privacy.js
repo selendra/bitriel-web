@@ -9,6 +9,9 @@ import Link from 'next/link'
 export default function Privacy() {
   return (
     <Container>
+      <Head>
+        <title>Privacy & Policy</title>
+      </Head>
       <Header/>
       <PageContainer>
         <Row>

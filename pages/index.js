@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <Container>
       <Head>
-        
+        <title>Bitriel</title>
       </Head>
       <Header />
       <PageContainer>
