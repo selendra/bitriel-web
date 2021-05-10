@@ -9,9 +9,12 @@ import Footer from '../components/Footer'
 export default function Home() {
   return (
     <Container>
+      <Head>
+        
+      </Head>
       <Header />
       <PageContainer>
-        <Row>
+        <SectionOne>
           <Col xs={24} sm={24} md={12} lg={12} xl={12}>
             <Spacing />
             <Title>Bitriel Wallet</Title>
@@ -33,7 +36,7 @@ export default function Home() {
               />
             </Row>
           </Col>
-        </Row>
+        </SectionOne>
       </PageContainer>
       <Section>
         <PageContainer>
@@ -88,6 +91,12 @@ const PageContainer = styled.div`
   margin: 0 auto;
   @media (max-width: 76rem) {
     padding: 0 1em;
+  }
+`
+const SectionOne = styled(Row)`
+  padding: 4em 0;
+  @media (max-width: 500px) {
+    padding: 2em 0;
   }
 `
 const Title = styled.h1`
@@ -158,6 +167,10 @@ const ButtonStyled = styled(Button)`
 `
 const Section = styled.div`
   background: #f3f5f7;
+  padding-top: 4em;
+  @media (max-width: 500px) {
+    padding-top: 2em;
+  }
 `
 const Text = styled.p`
   font-size: 16px;

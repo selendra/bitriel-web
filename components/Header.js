@@ -28,7 +28,7 @@ export default function Header() {
           </Col>
           <Col xs={12} sm={12} md={0} lg={0} xl={0}>
             <Row justify='end'>
-              <Image 
+              <img 
                 src="/images/menu.svg"
                 alt="bitriel"
                 width={32}
@@ -56,6 +56,7 @@ export default function Header() {
                 <Link href='/about'>
                   <HeaderItem>About Us</HeaderItem>
                 </Link>
+                <Spacing/>
                 <ButtonStyled type='ghost'><Link href='https://play.google.com/store/apps/details?id=com.selendra.secure_wallet&hl=en&gl=US' target='_blank'>Get APP</Link></ButtonStyled>
               </Row>
             </DrawerStyled>

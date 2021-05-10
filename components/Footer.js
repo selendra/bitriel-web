@@ -31,9 +31,9 @@ export default function Footer() {
                   <ListStyled>
                     <Link href='https://www.facebook.com/selendraio'>
                       <ListItem>
-                        <Image 
+                        <img 
                           src="/images/facebook.svg"
-                          alt="bitriel"
+                          alt="facebook"
                           width={32}
                           height={32}
                         />
@@ -42,9 +42,9 @@ export default function Footer() {
                     </Link>
                     <Link href='https://twitter.com/SelendraOrg'>
                       <ListItem>
-                        <Image 
+                        <img 
                           src="/images/twitter.svg"
-                          alt="bitriel"
+                          alt="twitter"
                           width={32}
                           height={32}
                         />
@@ -53,9 +53,9 @@ export default function Footer() {
                     </Link>
                     <Link href='https://www.linkedin.com/company/selendra'>
                       <ListItem>
-                        <Image 
+                        <img 
                           src="/images/linkedin.svg"
-                          alt="bitriel"
+                          alt="linkedin"
                           width={32}
                           height={32}
                         />
@@ -68,9 +68,9 @@ export default function Footer() {
                   <ListStyled>
                     <Link href='https://t.me/selendraorg'>
                       <ListItem>
-                        <Image 
+                        <img 
                           src="/images/telegram.svg"
-                          alt="bitriel"
+                          alt="telegram"
                           width={32}
                           height={32}
                         />
@@ -79,9 +79,9 @@ export default function Footer() {
                     </Link>
                     <Link href='https://medium.com/selendra'>
                       <ListItem>
-                        <Image 
+                        <img 
                           src="/images/medium.svg"
-                          alt="bitriel"
+                          alt="medium"
                           width={32}
                           height={32}
                         />
@@ -96,10 +96,8 @@ export default function Footer() {
           </Col>
         </Row>
       </PageContainer>
-      <FooterCopyright align='middle'>
-        <PageContainer>
-          <p style={{margin: 0}}>Copyright © 2020 Selendra</p>
-        </PageContainer>
+      <FooterCopyright align='middle' justify='center'>
+        <p style={{margin: 0}}>Copyright © 2020 Selendra</p>
       </FooterCopyright>
     </Container>
   )
@@ -112,9 +110,9 @@ const Container = styled.div`
   top: 100%;
 `
 const PageContainer = styled.div`
-  margin-bottom: -100vh;
   max-width: 76rem;
   margin: 0 auto;
+  padding: 4em 0;
   @media (max-width: 76rem) {
     padding: 0 1em;
   }
