@@ -1,9 +1,7 @@
 import Head from 'next/head'
 import styled from 'styled-components'
-import Header from '../components/Header'
 import Image from 'next/image'
 import { Row, Col, Button } from 'antd'
-import Footer from '../components/Footer'
 import Link from 'next/link'
 
 export default function TermOfUse() {
@@ -12,7 +10,6 @@ export default function TermOfUse() {
       <Head>
         <title>Term of use</title>
       </Head>
-      <Header/>
       <PageContainer>
         <Row>
           <Col>
@@ -124,7 +121,6 @@ export default function TermOfUse() {
           </Col>
         </Row>
       </PageContainer>
-      <Footer/>
     </Container>
   )
 }

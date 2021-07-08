@@ -87,6 +87,8 @@ const PageContainer = styled.div`
   max-width: 76rem;
   height: 80px;
   margin: 0 auto;
+  padding-bottom: 170px;
+  padding-top: 100px;
   @media (max-width: 500px) {
     padding-right: 20px;
   }
@@ -97,7 +99,7 @@ const PageContainer = styled.div`
 const ButtonStyled = styled(Button)`
   width: 160px;
   height: 40px;
-  border-radius: 64px;
+  border-radius: 4px;
   color: #03A9F4;
   font-size: 14px;
   font-weight: 600;

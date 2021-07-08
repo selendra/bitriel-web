@@ -1,178 +1,162 @@
 import Head from 'next/head'
-import Link from 'next/link'  
+import Link from 'next/link'
 import Image from 'next/image'
 import styled from 'styled-components'
-import { Row, Col, Button } from 'antd'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import { Row, Col, Button, Card } from 'antd'
+import BackgroundAnimation from '../components/BGanimation'
+
 
 export default function Home() {
   return (
-    <Container>
+    <div>
       <Head>
         <title>Bitriel</title>
       </Head>
-      <Header />
-      <PageContainer>
-        <SectionOne>
-          <Col xs={24} sm={24} md={12} lg={12} xl={12}>
-            <Spacing />
-            <Title>Bitriel Wallet</Title>
-            <SubTitle>
-              Digital wallet management for cross-chain assets, staking and governance operations, collection and self-owned private key.
-            </SubTitle>
-            <Row align='middle'>
-              <ButtonStyled><Link href='https://play.google.com/store/apps/details?id=com.selendra.secure_wallet&hl=en&gl=US' target='_blank'>Get Android App</Link></ButtonStyled>
-              <Text>Coming soon on IOS...</Text>
-            </Row>
-          </Col>
-          <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+      <Container>
+        <FirstSection>
+          <Row>
+            <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+              <Title>Experience the <br/>power of DeFi <br/>with <h2>Bitriel</h2></Title>
+              <ButtonStyled type='ghost'>Learn More</ButtonStyled>
+            </Col>
+            <Col xs={0} sm={0} md={12} lg={12} xl={12}>
+              <BackgroundAnimation/>
+            </Col>
+          </Row>
+        </FirstSection>
+        <SecondSection>
+          <Row justify='space-around'>
+            <Col xs={24} sm={24} md={{span: 6, offset: 0}} lg={{span: 6, offset: 0}} xl={{span: 6, offset: 0}}>
+              <CardStyled>
+                <div>
+                  <img src='/images/decentralized.svg' width='24' height='24' />
+                  <h2>Decentralized</h2>
+                  <p>Access on immutable money market protocol directly on-chain</p>
+                </div>
+              </CardStyled>
+            </Col>
+            <Col xs={24} sm={24} md={{span: 6, offset: 1}} lg={{span: 6, offset: 1}} xl={{span: 6, offset: 1}}>
+              <CardStyled>
+                <div>
+                  <img src='/images/shield.svg' width='24' height='24' />
+                  <h2>BEP-20</h2>
+                  <p>All Venus Protocol assets are bound by the BEP-20 standard.</p>
+                </div>
+              </CardStyled>
+            </Col>
+            <Col xs={24} sm={24} md={{span: 6, offset: 1}} lg={{span: 6, offset: 1}} xl={{span: 6, offset: 1}}>
+              <CardStyled>
+                <div>
+                  <img src='/images/scalable.svg' alt='scalable' width='24' height='24' />
+                  <h2>Scalble</h2>
+                  <p>Built on Binance Smart Chain for fast, secure, and low cost transaction.</p>
+                </div>
+              </CardStyled>
+            </Col>
+          </Row>
+        </SecondSection>
+        <Row>
+          <Col xs={0} sm={0} md={12} lg={12} xl={12}>
             <Row justify='center'>
-              <Image 
-                src="/images/app1.png"
-                alt="Picture of the author"
-                width={280}
-                height={560}
-              />
+              <ProductImg src='/images/app1.png' alt='app' />
             </Row>
           </Col>
-        </SectionOne>
-      </PageContainer>
-      <Section>
-        <PageContainer>
-            <Row>
-              <Col xs={0} sm={0} md={12} lg={12} xl={12}>
-                <Row justify='start' align='bottom' style={{height: '100%'}}>
-                  <Image 
-                    src="/images/mobile.png"
-                    alt="Picture of the author"
-                    width={565}
-                    height={592}
-                  />
-                </Row>
-              </Col>
-              <Col xs={24} sm={24} md={12} lg={12} xl={12}>
-                <Spacing />
-                <Image 
-                  src="/images/logo.png"
-                  alt="Picture of the author"
-                  width={80}
-                  height={90}
-                />
-                <TitleB>Get Started with Bitriel</TitleB>
-                <SubTitleB>
-                  Bitriel Wallets are used to store and transact SEL tokens and multiple other cryptocoins. Wallets can be integrated into any application where a use case exists, connecting the application to the Selendra main chain.
-                </SubTitleB>
-                <ButtonStyled><Link href='https://play.google.com/store/apps/details?id=com.selendra.secure_wallet&hl=en&gl=US' target='_blank'>Get Android App</Link></ButtonStyled>
-              </Col>
-              <Col xs={24} sm={24} md={0} lg={0} xl={0}>
-                <Row justify='start' align='bottom' style={{height: '100%'}}>
-                  <Image 
-                    src="/images/mobile.png"
-                    alt="Picture of the author"
-                    width={565}
-                    height={592}
-                  />
-                </Row>
-              </Col>
+          <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+            <SubTitle>Bitriel Wallet</SubTitle>
+            <Text>Digital wallet management for cross-chain assets, staking and governance operations, collection and self-owned private key.</Text>
+            <ButtonStyled type='ghost'><a href="https://play.google.com/store/apps/details?id=com.selendra.secure_wallet&hl=en&gl=US" target='_blank'>Download App</a></ButtonStyled>
+          </Col>
+          <Col xs={24} sm={24} md={0} lg={0} xl={0}>
+            <Row justify='center'>
+              <ProductImg src='/images/app1.png' alt='app' />
             </Row>
-        </PageContainer>
-      </Section>
-      <Footer />
-    </Container>
+          </Col>
+        </Row>
+      </Container>
+    </div>
   )
 }
 
 const Container = styled.div`
-  width: 100vw;
-`
-const PageContainer = styled.div`
-  max-width: 76rem;
+  max-width: 1216px;
   margin: 0 auto;
   @media (max-width: 76rem) {
     padding: 0 1em;
   }
+` 
+const FirstSection = styled.div`
+  height: 70vh;
+  @media (max-width: 768px) {
+    height: auto;
+  }
 `
-const SectionOne = styled(Row)`
-  padding: 4em 0;
-  @media (max-width: 500px) {
-    padding: 2em 0;
+const SecondSection = styled.div`
+  padding: 0 56px;
+  padding-bottom: 200px;
+  @media (max-width: 768px) {
+    padding: 80px 0;
   }
 `
 const Title = styled.h1`
+  font-size: 88px;
+  font-weight: 700;
+  color: #FFF;
+  h2 {
+    display: inline;
+    font-weight: 900;
+    font-size: 88px;
+    background: linear-gradient(65deg, rgba(240,201,10,1) 15%, rgba(3,169,244,1) 73%, rgba(3,169,244,1) 100%); 
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  @media (max-width: 768px) {
+    padding-top: 40px;
+    font-size: 36px;
+    h2 {
+      font-size: 52px;
+    }
+  }
+`
+const SubTitle = styled.h1`
   font-size: 52px;
-  font-weight: 600;
-  color: #F5F5F5;
-  @media (max-width: 500px) {
-    font-size: 32px;
-  }
-`
-const TitleB = styled.h1`
-  font-size: 52px;
-  font-weight: 600;
-  color: #000;
-  @media (max-width: 500px) {
-    font-size: 32px;
-  }
-  @media (max-height: 500px) {
-    font-size: 32px;
-  }
-`
-const SubTitle = styled.p`
-  font-size: 24px;
-  font-weight: 300;
-  @media (max-width: 500px) {
-    font-size: 16px;
-  }
-`
-const SubTitleB = styled.p`
-  font-size: 24px;
-  font-weight: 400;
-  color: #000;
-  @media (max-width: 500px) {
-    font-size: 16px;
-  }
-  @media (max-height: 500px) {
-    font-size: 16px;
-  }
-`
-const Spacing = styled.div`
-  padding: 2rem 0;
-  @media (max-width: 500px) {
-    padding: .2rem 0;
-  }
-  @media (max-height: 500px) {
-    padding: .2rem 0;
-  }
-`
-const ButtonStyled = styled(Button)`
-  width: 180px;
-  height: 56px;
-  background: #03A9F4;
-  font-size: 16px;
-  border-radius: 64px;
-  border: none;
-  color: #fff;
-  font-weight: 600;
-  margin: 10px 0;
-  &:hover {
-    background: #0080ba;
-    color: #fff;
-  }
-  @media (max-width: 500px) {
-    font-size: 14px;
-    width: 160px;
-    height: 40px;
-  }
-`
-const Section = styled.div`
-  background: #f3f5f7;
-  padding-top: 4em;
-  @media (max-width: 500px) {
-    padding-top: 2em;
-  }
+  font-weight: 900;
+  color: #FFF;
+  padding-top: 80px;
 `
 const Text = styled.p`
-  font-size: 16px;
-  margin: 0 1rem;
+  color: #FFF;
+  font-size: 20px;
+`
+const ButtonStyled = styled(Button)`
+  width: 220px;
+  height: 60px;
+  color: #FFF;
+  font-size: 20px;
+  border-radius: 4px;
+  border-color: #5ac4be;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+`
+const CardStyled = styled(Card)`
+  background: linear-gradient(245.22deg,#c200fb 7.97%,#3772ff 49.17%,#3773fe 0,#5ac4be 92.1%);
+  padding: 1px;
+  border-radius: 4px;
+  color: #FFF;
+  h2 {
+    color: #FFF;
+  }
+  div {
+    background-color: #131a35;
+    opacity: .9;
+    border-radius: 4px;
+    padding: 12px 24px;
+  }
+  @media (max-width: 768px) {
+    margin: 40px 0;
+  }
+`
+const ProductImg = styled.img`
+  width: 280px;
+  height: auto;
 `

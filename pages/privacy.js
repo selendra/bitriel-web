@@ -1,9 +1,7 @@
 import Head from 'next/head'
 import styled from 'styled-components'
-import Header from '../components/Header'
 import Image from 'next/image'
 import { Row, Col, Button } from 'antd'
-import Footer from '../components/Footer'
 import Link from 'next/link'
 
 export default function Privacy() {
@@ -12,7 +10,6 @@ export default function Privacy() {
       <Head>
         <title>Privacy & Policy</title>
       </Head>
-      <Header/>
       <PageContainer>
         <Row>
           <Col>
@@ -155,7 +152,6 @@ export default function Privacy() {
           </Col>
         </Row>
       </PageContainer>
-      <Footer/>
     </Container>
   )
 }

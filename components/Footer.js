@@ -6,6 +6,7 @@ import Link from 'next/link'
 export default function Footer() {
   return (
     <Container>
+      <BreakLine />
       <PageContainer>
         <Row justify='space-between'>
           <Col xs={24} sm={24} md={8} lg={10} xl={14}>
@@ -105,7 +106,7 @@ export default function Footer() {
 
 const Container = styled.div`
   width: 100vw;
-  background: #182b36;
+  background: transparent;
   position: sticky;
   top: 100%;
 `
@@ -148,7 +149,7 @@ const SubTitle = styled.h2`
   }
 `
 const FooterCopyright = styled(Row)`
-  background: #122029;
+  background: transparent;
   height: 40px;
 `
 const ListStyled = styled.ul`
@@ -163,4 +164,8 @@ const ListItem = styled.li`
   display: flex;
   align-items: center;
   cursor: pointer;
+`
+const BreakLine = styled.div`
+  height: 1px; 
+  background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgba(90, 196, 190, 0) 0%, rgb(55, 114, 255) 50%, rgba(194, 0, 251, 0) 100%) repeat scroll 0% 0%;
 `

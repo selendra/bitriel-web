@@ -12,7 +12,6 @@ export default function About() {
       <Head>
         <title>About</title>
       </Head>
-      <Header/>
       <PageContainer>
         <Row>
           <Col>
@@ -29,14 +28,13 @@ export default function About() {
           </Col>
         </Row>
       </PageContainer>
-      <Footer/>
     </Container>
   )
 }
 
 const Container = styled.div`
   width: 100vw;
-  min-height: 100vh;
+  min-height: calc(100vh - 270px);
 `
 const PageContainer = styled.div`
   max-width: 76rem;
