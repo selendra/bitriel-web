@@ -95,7 +95,7 @@ const PageContainer = styled.div`
   height: 80px;
   margin: 0 auto;
   padding-bottom: 170px;
-  padding-top: 100px;
+  padding-top: 20px;
   @media (max-width: 500px) {
     padding-right: 20px;
   }
