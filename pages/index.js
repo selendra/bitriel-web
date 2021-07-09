@@ -18,7 +18,7 @@ export default function Home() {
               <Title>Experience the <br/>power of DeFi <br/>with <span>Bitriel</span></Title>
               <Row justify='space-between'>
                 <Col xs={24} sm={24} md={12} lg={8} xl={8}>
-                  <ButtonStyled type='ghost'>Launch App</ButtonStyled>
+                  <ButtonStyled type='ghost'><a href='https://app.bitriel.com' target='_blank'>Launch App</a></ButtonStyled>
                 </Col>
                 <Col xs={24} sm={24} md={12} lg={12} xl={12}>
                   <ButtonStyled type='ghost'>Read More</ButtonStyled>

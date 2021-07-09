@@ -62,7 +62,7 @@ export default function Header() {
                   <HeaderItem>Wallet</HeaderItem>
                 </a>
                 <Spacing/>
-                <ButtonStyled type='ghost'><Link href='https://play.google.com/store/apps/details?id=com.selendra.secure_wallet&hl=en&gl=US' target='_blank'>Launch App</Link></ButtonStyled>
+                <ButtonStyled type='ghost'><Link href='https://app.bitriel.com' target='_blank'>Launch App</Link></ButtonStyled>
               </Row>
             </DrawerStyled>
           </Col>
@@ -75,7 +75,7 @@ export default function Header() {
                 <HeaderItem>Wallet</HeaderItem>
               </a>
               <ButtonStyled type='ghost'>
-                <Link href='https://play.google.com/store/apps/details?id=com.selendra.secure_wallet&hl=en&gl=US'>
+                <Link href='https://app.bitriel.com' target='_blank'>
                   Launch App
                 </Link>
               </ButtonStyled>
