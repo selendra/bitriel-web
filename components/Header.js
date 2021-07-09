@@ -18,11 +18,11 @@ export default function Header() {
         <Row align='middle' justify='space-between'>
           <Col xs={12} sm={12} md={12} lg={12} xl={12}>
             <Link href='/'>
-              <img
+              <HeaderLogo
                 src="/images/bitriel.png"
                 alt="bitriel"
-                width={160}
-                height={60}
+                width={220}
+                height={80}
                 style={{cursor: 'pointer'}}
               />
             </Link>
@@ -40,7 +40,7 @@ export default function Header() {
           </Col>
           <Col xs={12} sm={12} md={0} lg={0} xl={0}>
             <DrawerStyled
-              drawerStyle={{background: '#1D3442'}}
+              drawerStyle={{background: '#131a35'}}
               title=""
               placement="right"
               closable={false}
@@ -51,14 +51,18 @@ export default function Header() {
                 <Image 
                   src="/images/bitriel.png"
                   alt="bitriel"
-                  width={360}
-                  height={120}
+                  width={180}
+                  height={60}
                 />
                 <Link href='/about'>
                   <HeaderItem>About Us</HeaderItem>
                 </Link>
                 <Spacing/>
-                <ButtonStyled type='ghost'><Link href='https://play.google.com/store/apps/details?id=com.selendra.secure_wallet&hl=en&gl=US' target='_blank'>Get APP</Link></ButtonStyled>
+                <a href="https://play.google.com/store/apps/details?id=com.selendra.secure_wallet&hl=en&gl=US" target='_blank'>
+                  <HeaderItem>Wallet</HeaderItem>
+                </a>
+                <Spacing/>
+                <ButtonStyled type='ghost'><Link href='https://play.google.com/store/apps/details?id=com.selendra.secure_wallet&hl=en&gl=US' target='_blank'>Launch App</Link></ButtonStyled>
               </Row>
             </DrawerStyled>
           </Col>
@@ -67,9 +71,12 @@ export default function Header() {
               <Link href='/about'>
                 <HeaderItem>About</HeaderItem>
               </Link>
+              <a href="https://play.google.com/store/apps/details?id=com.selendra.secure_wallet&hl=en&gl=US" target='_blank'>
+                <HeaderItem>Wallet</HeaderItem>
+              </a>
               <ButtonStyled type='ghost'>
                 <Link href='https://play.google.com/store/apps/details?id=com.selendra.secure_wallet&hl=en&gl=US'>
-                  Get APP
+                  Launch App
                 </Link>
               </ButtonStyled>
             </Row>
@@ -96,12 +103,20 @@ const PageContainer = styled.div`
     padding: 0 1em;
   }
 `
+const HeaderLogo = styled.img`
+  width: 220px;
+  height: 80px;
+  @media (max-width: 500px) {
+    width: 110px;
+    height: 40px;
+  }
+`
 const ButtonStyled = styled(Button)`
-  width: 160px;
-  height: 40px;
+  width: 180px;
+  height: 50px;
   border-radius: 4px;
   color: #03A9F4;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 600;
   border-width: 2px;
   border-color: #03A9F4;
@@ -109,13 +124,19 @@ const ButtonStyled = styled(Button)`
     background: #03A9F4;
     color: #fff;
   }
+  @media (max-width: 500px) {
+    font-size: 14px;
+  }
 `
 const HeaderItem = styled.p`
   color: #03A9F4;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   margin: 0 4rem;
   cursor: pointer;
+  @media (max-width: 500px) {
+    font-size: 14px;
+  }
 `
 const DrawerStyled = styled(Drawer)`
   color: #03A9F4;

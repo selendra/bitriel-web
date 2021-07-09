@@ -5,7 +5,6 @@ import styled from 'styled-components'
 import { Row, Col, Button, Card } from 'antd'
 import BackgroundAnimation from '../components/BGanimation'
 
-
 export default function Home() {
   return (
     <div>
@@ -16,8 +15,15 @@ export default function Home() {
         <FirstSection>
           <Row>
             <Col xs={24} sm={24} md={12} lg={12} xl={12}>
-              <Title>Experience the <br/>power of DeFi <br/>with <h2>Bitriel</h2></Title>
-              <ButtonStyled type='ghost'>Learn More</ButtonStyled>
+              <Title>Experience the <br/>power of DeFi <br/>with <span>Bitriel</span></Title>
+              <Row justify='space-between'>
+                <Col xs={24} sm={24} md={12} lg={8} xl={8}>
+                  <ButtonStyled type='ghost'>Launch App</ButtonStyled>
+                </Col>
+                <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+                  <ButtonStyled type='ghost'>Read More</ButtonStyled>
+                </Col>
+              </Row>
             </Col>
             <Col xs={0} sm={0} md={12} lg={12} xl={12}>
               <BackgroundAnimation/>
@@ -30,7 +36,7 @@ export default function Home() {
               <CardStyled>
                 <div>
                   <img src='/images/decentralized.svg' width='24' height='24' />
-                  <h2>Decentralized</h2>
+                  <h2>Decentralized App</h2>
                   <p>Access on immutable money market protocol directly on-chain</p>
                 </div>
               </CardStyled>
@@ -49,9 +55,22 @@ export default function Home() {
                 <div>
                   <img src='/images/scalable.svg' alt='scalable' width='24' height='24' />
                   <h2>Scalble</h2>
-                  <p>Built on Binance Smart Chain for fast, secure, and low cost transaction.</p>
+                  <p>Built on with Selendra Chain for fast, secure, and low cost transaction, Currently operating on Binance Smart Chain.</p>
                 </div>
               </CardStyled>
+            </Col>
+          </Row>
+        </SecondSection>
+        <SecondSection>
+          <Row>
+            <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+              <SubTitle>A Bridge for DeFi</SubTitle>
+              <Text>Bitriel offers DeFi and AMM projects a clear path for bridging platforms and liquidity with the evolved capabilities of any EVM compatibility echo system.</Text>
+            </Col>
+            <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+              <Row justify='center'>
+                <BridgeImg src='/images/sel-bridge.png' alt='sel-bridge' />
+              </Row>
             </Col>
           </Row>
         </SecondSection>
@@ -97,12 +116,18 @@ const SecondSection = styled.div`
     padding: 80px 0;
   }
 `
+const BridgeImg = styled.img`
+  width: 520px;
+  height: auto;
+  @media (max-width: 500px) {
+    width: 100%;
+  }
+`
 const Title = styled.h1`
   font-size: 88px;
   font-weight: 700;
   color: #FFF;
-  h2 {
-    display: inline;
+  span {
     font-weight: 900;
     font-size: 88px;
     background: linear-gradient(65deg, rgba(240,201,10,1) 15%, rgba(3,169,244,1) 73%, rgba(3,169,244,1) 100%); 
@@ -112,7 +137,7 @@ const Title = styled.h1`
   @media (max-width: 768px) {
     padding-top: 40px;
     font-size: 36px;
-    h2 {
+    span {
       font-size: 52px;
     }
   }
@@ -124,7 +149,7 @@ const SubTitle = styled.h1`
   padding-top: 80px;
 `
 const Text = styled.p`
-  color: #FFF;
+  color: #84879c;
   font-size: 20px;
 `
 const ButtonStyled = styled(Button)`
@@ -132,6 +157,7 @@ const ButtonStyled = styled(Button)`
   height: 60px;
   color: #FFF;
   font-size: 20px;
+  margin-top: 10px;
   border-radius: 4px;
   border-color: #5ac4be;
   @media (max-width: 768px) {
