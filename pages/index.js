@@ -132,7 +132,7 @@ const DecentralizeImg = styled.img`
   width: 320px;
   height: auto;
   @media (max-width: 500px) {
-    width: 100%;
+    width: 80%;
   }
 `
 const ScalableImg = styled.img`
@@ -181,24 +181,6 @@ const ButtonStyled = styled(Button)`
   border-color: #5ac4be;
   @media (max-width: 768px) {
     width: 100%;
-  }
-`
-const CardStyled = styled(Card)`
-  background: linear-gradient(245.22deg,#c200fb 7.97%,#3772ff 49.17%,#3773fe 0,#5ac4be 92.1%);
-  padding: 1px;
-  border-radius: 4px;
-  color: #FFF;
-  h2 {
-    color: #FFF;
-  }
-  div {
-    background-color: #131a35;
-    opacity: .9;
-    border-radius: 4px;
-    padding: 12px 24px;
-  }
-  @media (max-width: 768px) {
-    margin: 40px 0;
   }
 `
 const ProductImg = styled.img`
