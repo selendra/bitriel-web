@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import { NextSeo } from 'next-seo';
 import Link from 'next/link'
 import Image from 'next/image'
 import styled from 'styled-components'
@@ -8,9 +8,10 @@ import BackgroundAnimation from '../components/BGanimation'
 export default function Home() {
   return (
     <div>
-      <Head>
-        <title>Bitriel</title>
-      </Head>
+      <NextSeo
+        title="Bitriel"
+        description="Digital wallet management for cross-chain assets, staking and governance operations, collection and self-owned private key."
+      />
       <Container>
         <FirstSection>
           <Row>

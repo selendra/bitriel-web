@@ -97,9 +97,9 @@ export default function Footer() {
           </Col>
         </Row>
       </PageContainer>
-      <FooterCopyright align='middle' justify='center'>
+      {/* <FooterCopyright align='middle' justify='center'>
         <p style={{margin: 0}}>Copyright © 2020 Selendra</p>
-      </FooterCopyright>
+      </FooterCopyright> */}
     </Container>
   )
 }

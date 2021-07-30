@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import {NextSeo} from 'next-seo'
 import styled from 'styled-components'
 import Header from '../components/Header'
 import Image from 'next/image'
@@ -9,9 +9,10 @@ import Link from 'next/link'
 export default function About() {
   return (
     <Container>
-      <Head>
-        <title>About</title>
-      </Head>
+      <NextSeo
+        title="About | Bitriel"
+        description="The Selendra platform is used to build, deploy, and employ decentralized, peer-2-peer applications, as simple as the web and mobile applications we use today."
+      />
       <PageContainer>
         <Row>
           <Col>

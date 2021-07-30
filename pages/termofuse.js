@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import {NextSeo} from 'next-seo'
 import styled from 'styled-components'
 import Image from 'next/image'
 import { Row, Col, Button } from 'antd'
@@ -7,9 +7,10 @@ import Link from 'next/link'
 export default function TermOfUse() {
   return (
     <Container>
-      <Head>
-        <title>Term of use</title>
-      </Head>
+      <NextSeo
+        title="Term of use | Bitriel"
+        description="Selendra provides the Software solely on the terms and conditions set forth in this Agreement and on the condition that You accept and comply with them."
+      />
       <PageContainer>
         <Row>
           <Col>

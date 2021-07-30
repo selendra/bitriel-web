@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import {NextSeo} from 'next-seo'
 import styled from 'styled-components'
 import Image from 'next/image'
 import { Row, Col, Button } from 'antd'
@@ -7,9 +7,10 @@ import Link from 'next/link'
 export default function Privacy() {
   return (
     <Container>
-      <Head>
-        <title>Privacy & Policy</title>
-      </Head>
+      <NextSeo
+        title="Privacy & Policy | Bitriel"
+        description="This privacy policy aims to give information on how Selendra collects and processes your personal data when you use the Selendra Wallet and related services (Services) or use the Selendra Wallet website (www.Selendra.com). Our website and Services are not intended for children and we do not knowingly collect data relating to children."
+      />
       <PageContainer>
         <Row>
           <Col>
