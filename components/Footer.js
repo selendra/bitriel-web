@@ -30,7 +30,7 @@ export default function Footer() {
                 <Row>
                   <Col>
                   <ListStyled>
-                    <Link href='https://www.facebook.com/selendraio'>
+                    <Link href='https://www.facebook.com/selendrachain'>
                       <ListItem>
                         <img 
                           src="/images/facebook.svg"
@@ -41,7 +41,7 @@ export default function Footer() {
                         <Text>Facebook</Text>
                       </ListItem> 
                     </Link>
-                    <Link href='https://twitter.com/SelendraOrg'>
+                    <Link href='https://twitter.com/Selendrachain'>
                       <ListItem>
                         <img 
                           src="/images/twitter.svg"
@@ -52,7 +52,7 @@ export default function Footer() {
                         <Text>Twitter</Text>
                       </ListItem>
                     </Link>
-                    <Link href='https://www.linkedin.com/company/selendra'>
+                    <Link href='https://www.linkedin.com/company/selendrachain'>
                       <ListItem>
                         <img 
                           src="/images/linkedin.svg"
@@ -67,7 +67,7 @@ export default function Footer() {
                   </Col>
                   <Col offset={2}>
                   <ListStyled>
-                    <Link href='https://t.me/selendraorg'>
+                    <Link href='https://t.me/selendrachain'>
                       <ListItem>
                         <img 
                           src="/images/telegram.svg"
